@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 6rem !important;
+}
+
+h2 {
+  font-size: 5.5rem !important;
+}
+
+h3 {
+  font-size: 5rem !important;
+}
+
+h4 {
+  font-size: 4.5rem !important;
+}
+
+h5 {
+  font-size: 4.2 !important;
+}
+
+h6 {
+  font-size: 4rem !important;
+}
+
+
