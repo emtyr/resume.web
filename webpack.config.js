@@ -6,7 +6,6 @@ module.exports = {
   mode: 'development',
   entry: './src/index.tsx',
   target: 'web',
-  // externals: nodeExternals(),
   resolve: {
     modules: ['node_modules'],
     extensions: ['.tsx', '.ts', '.js', 'jsx'],
@@ -19,13 +18,16 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]',
+        },
+      },
+      {
         test: /\.css?$/,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
         exclude: /node_modules/,
-      },
-      {
-        test: /\.html$/i,
-        loader: 'html-loader',
       },
     ],
   },

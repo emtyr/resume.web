@@ -3,9 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gib: ['gibberish'],
-        'gibberish-normal': 'gibberish',
-      }
+        gib: 'gibberish',
+      },
     },
   },
   plugins: [],
