@@ -14,8 +14,8 @@ const AboutMe = () => {
           </h3>
           <div className="font-gib text-3xl">{aboutme.subtitle}</div>
         </div>
-        <div className="w-full flex flex-col px-16 items-center gap-8">
-          <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
+        <div className="w-full h-full flex flex-col px-16 gap-8">
+          <div className="w-full h-full flex flex-col lg:flex-row gap-8">
             <ProfilePicture />
             <Introduction />
           </div>

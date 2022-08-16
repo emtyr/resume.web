@@ -11,6 +11,12 @@ module.exports = {
       backgroundImage: {
         timeline: 'url(public/images/timeline.png)',
       },
+      width: {
+        66: '16.5rem',
+      },
+      height: {
+        88: '22rem',
+      },
     },
   },
   plugins: [],

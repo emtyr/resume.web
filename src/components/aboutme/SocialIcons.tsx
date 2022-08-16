@@ -10,14 +10,15 @@ const SocialIcons = () => (
       <div className="flex gap-4 justify-center">
         <a
           href="https://www.linkedin.com/in/flavius-emanuel-t-a1721078/"
-          target="_blank">
+          target="_blank"
+          rel="noreferrer">
           <img
             className="hover:brightness-0 hover:invert ease-in duration-300"
             src="/images/icons/linkedin-filled.svg"
             alt="linkedIn Icon"
           />
         </a>
-        <a href="https://github.com/emtyr" target="_blank">
+        <a href="https://github.com/emtyr" target="_blank" rel="noreferrer">
           <img
             className="hover:brightness-0 hover:invert ease-in duration-300"
             src="/images/icons/github-filled.svg"
