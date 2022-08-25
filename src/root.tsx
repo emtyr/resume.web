@@ -1,7 +1,8 @@
 import AboutMe from './components/aboutme';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
-import Experience from './components/experience/index';
+import Experience from './components/experience';
+import Skills from './components/skills';
 
 const Root = () => (
   <div className="w-screen h-full text-white relative overflow-x-hidden">
@@ -11,6 +12,7 @@ const Root = () => (
     </div>
     <AboutMe />
     <Experience />
+    <Skills />
   </div>
 );
 export default Root;

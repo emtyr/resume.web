@@ -1,7 +1,7 @@
-import { aboutme } from '../data/text';
-import Introduction from './aboutme/Introduction';
-import ProfilePicture from './aboutme/ProfilePicture';
-import SocialIcons from './aboutme/SocialIcons';
+import { aboutme } from '../../data/text';
+import Introduction from './Introduction';
+import ProfilePicture from './ProfilePicture';
+import SocialIcons from './SocialIcons';
 const AboutMe = () => {
   const title = aboutme.title.split('-');
   return (
