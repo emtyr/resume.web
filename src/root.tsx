@@ -11,8 +11,8 @@ const Root = () => (
       <Navbar />
     </div>
     <AboutMe />
-    <Experience />
     <Skills />
+    <Experience />
   </div>
 );
 export default Root;

@@ -7,7 +7,7 @@ const Skills = () => {
       <div className="flex flex-col w-full h-full justify-center items-center py-8">
         <div className="flex space-x-12">
           <Tabutton
-            text="Design"
+            text="Business Operations"
             color="pink"
             onClick={() => setactiveTab('design')}
           />
@@ -17,7 +17,7 @@ const Skills = () => {
             onClick={() => setactiveTab('code')}
           />
           <Tabutton
-            text="Smoke"
+            text="Customer Success"
             color="green"
             onClick={() => setactiveTab('smoke')}
           />
