@@ -3,6 +3,7 @@ import Hero from './components/hero';
 import Navbar from './components/navbar';
 import Experience from './components/experience';
 import Skills from './components/skills';
+import Footer from './components/footer/footer';
 
 const Root = () => (
   <div className="w-screen h-full text-white relative overflow-x-hidden">
@@ -13,6 +14,7 @@ const Root = () => (
     <AboutMe />
     <Skills />
     <Experience />
+    <Footer />
   </div>
 );
 export default Root;

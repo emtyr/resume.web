@@ -5,7 +5,7 @@ import SocialIcons from './SocialIcons';
 const AboutMe = () => {
   const title = aboutme.title.split('-');
   return (
-    <div className="w-screen min-h-full flex flex-col items-center bg-slate-900 leading-normal p-8">
+    <div className="w-screen min-h-full flex flex-col items-center bg-[#1C202B] leading-normal p-8">
       <div className="w-full flex flex-col items-center space-y-16 max-w-7xl">
         <div className="w-full flex flex-col items-center">
           <h3 className="font-bold">
@@ -19,7 +19,9 @@ const AboutMe = () => {
             <ProfilePicture />
             <Introduction />
           </div>
-          <SocialIcons />
+          <div className="w-full h-full">
+            <SocialIcons />
+          </div>
         </div>
       </div>
     </div>

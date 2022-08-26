@@ -1147,6 +1147,16 @@ video {
   background-color: rgb(165 218 38 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#3B404D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 64 77 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .bg-timeline {
   background-image: url(public/images/timeline.png);
 }
