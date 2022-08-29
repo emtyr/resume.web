@@ -9,7 +9,7 @@ const ProfilePicture = () => (
         alt=""
       />
     </div>
-    <div className="w-full flex flex-col bg-[#3B404D] rounded-xl items-center p-4">
+    <div className="w-auto flex flex-col bg-[#3B404D] rounded-xl items-center p-4">
       <div className="w-full text-4xl text-center">{aboutme.right.name}</div>
       <div className="text-center">{aboutme.right.title}</div>
     </div>

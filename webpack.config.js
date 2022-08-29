@@ -9,6 +9,9 @@ module.exports = {
   resolve: {
     modules: ['node_modules'],
     extensions: ['.tsx', '.ts', '.js', 'jsx'],
+    alias: {
+      '~': '/src/',
+    },
   },
   module: {
     rules: [
@@ -25,7 +28,7 @@ module.exports = {
         },
       },
       {
-        test: /.(png|svg)$/i,
+        test: /.(png|svg|jpg)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]',

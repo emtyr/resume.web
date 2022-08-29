@@ -3,7 +3,7 @@ import { hero } from '../data/text';
 const Hero = () => {
   const subtitle = hero.subtitle.split('-');
   return (
-    <div className="w-full h-screen bg-black">
+    <div className="w-full h-screen bg-hero bg-center bg-cover">
       <div className="w-full h-full flex flex-col justify-center items-center space-y-6 pb-20 px-8">
         <div className="text-5xl">{hero.title}</div>
         <div className="text-5xl">{subtitle[0]}</div>
