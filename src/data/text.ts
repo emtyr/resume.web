@@ -50,23 +50,23 @@ export const xpcards = [
 
 export const skillchart: ISkillChart = {
   businessOperations: [
-    { name: 'Data Analysis', value: 45 },
+    { name: 'Data Analysis', value: 85 },
     { name: 'UX Design', value: 64 },
-    { name: 'Web Stuff', value: 72 },
-    { name: 'Logo Design', value: 80 },
+    { name: 'Web Stuff', value: 55 },
+    { name: 'Logo Design', value: 41 },
     { name: '3DS Max', value: 99 },
   ],
   code: [
-    { name: 'Adobe', value: 40 },
+    { name: 'Adobe', value: 53 },
     { name: 'UX Design', value: 64 },
-    { name: 'Web Stuff', value: 72 },
-    { name: 'Logo Design', value: 80 },
+    { name: 'Web Stuff', value: 74 },
+    { name: 'Logo Design', value: 81 },
     { name: '3DS Max', value: 99 },
   ],
   customerSuccess: [
-    { name: 'Process Improvement', value: 80 },
+    { name: 'Process Improvement', value: 86 },
     { name: 'UX Design', value: 64 },
-    { name: 'Web Stuff', value: 72 },
+    { name: 'Web Stuff', value: 39 },
     { name: 'Logo Design', value: 50 },
     { name: '3DS Max', value: 99 },
   ],

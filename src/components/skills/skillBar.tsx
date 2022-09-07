@@ -1,10 +1,14 @@
 import { SkillBarprops } from './props';
 
-const SkillBar = ({ name, value }: SkillBarprops) => (
-  <div className="w-20 h-full relative">
+const SkillBar = ({ name, color, value }: SkillBarprops) => (
+  <div className="relative w-20 h-full group">
     <div
       style={{ height: `${value}%` }}
-      className=" w-full bg-[#F3377A] absolute bottom-0 rounded-t-md"
+      className={`flex w-full justify-center absolute bottom-0 rounded-t-md border-r-4 border-white/[0.5] transition-[height] duration-500 ease-in ${
+        (color === 'pink' && 'bg-[#f3377a]') ||
+        (color === 'blue' && 'bg-[#1b7ee4]') ||
+        (color === 'green' && 'bg-[#A5DA26]')
+      }`}
     />
     <div
       style={{ writingMode: 'vertical-rl' }}

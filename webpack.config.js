@@ -24,7 +24,16 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         type: 'asset/resource',
         generator: {
-          filename: 'fonts/[name][ext]',
+          filename: name => {
+            /**
+             * @description Remove first & last item from ${path} array.
+             * @example
+             *      Orginal Path: 'src/images/avatar/image.jpg'
+             *      Changed To: 'images/avatar'
+             */
+            const path = name.filename.split('/').slice(1, -1).join('/');
+            return `${path}/[name][ext]`;
+          },
         },
       },
       {

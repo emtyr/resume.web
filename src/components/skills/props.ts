@@ -16,12 +16,15 @@ export interface ISkillChart {
   customerSuccess: ISkillPair[];
 }
 
+export type ActiveTab = { name: string; color: string };
+
 export interface Skillchartprops {
-  activeTab: string;
+  activeTab: ActiveTab;
   data: ISkillChart;
 }
 
 export interface SkillBarprops {
   name: string;
+  color: string;
   value: number;
 }

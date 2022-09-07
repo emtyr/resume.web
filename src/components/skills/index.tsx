@@ -3,7 +3,10 @@ import Skillchart from './skillChart';
 import Tabutton from './Tabutton';
 import { skillchart } from '~/data/text';
 const Skills = () => {
-  const [activeTab, setactiveTab] = useState('businessOp');
+  const [activeTab, setactiveTab] = useState({
+    name: 'businessOp',
+    color: 'pink',
+  });
   console.log(activeTab);
   return (
     <section className="w-full h-full flex flex-col pt-4 justify-end bg-[#1C202B]">
@@ -12,17 +15,19 @@ const Skills = () => {
           <Tabutton
             text="Business Operations"
             color="pink"
-            onClick={() => setactiveTab('businessOp')}
+            onClick={() => setactiveTab({ name: 'businessOp', color: 'pink' })}
           />
           <Tabutton
             text="Code"
             color="blue"
-            onClick={() => setactiveTab('code')}
+            onClick={() => setactiveTab({ name: 'code', color: 'blue' })}
           />
           <Tabutton
             text="Customer Success"
             color="green"
-            onClick={() => setactiveTab('success')}
+            onClick={() =>
+              setactiveTab({ name: 'CustomerSuccess', color: 'green' })
+            }
           />
         </div>
       </div>

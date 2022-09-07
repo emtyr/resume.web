@@ -1,15 +1,15 @@
-import { Skillchartprops, SkillBarprops } from './props';
+import { Skillchartprops, SkillBarprops, ActiveTab } from './props';
 import SkillBar from './skillBar';
 
 const Skillchart = ({ activeTab, data }: Skillchartprops) => {
-  const selectDataByActiveTab = (activeTab: string) => {
-    if (activeTab === 'businessOp') {
+  const selectDataByActiveTab = (activeTab: ActiveTab) => {
+    if (activeTab.name === 'businessOp') {
       return data.businessOperations;
     }
-    if (activeTab === 'code') {
+    if (activeTab.name === 'code') {
       return data.code;
     }
-    if (activeTab === 'success') {
+    if (activeTab.name === 'CustomerSuccess') {
       return data.customerSuccess;
     }
   };
@@ -18,7 +18,12 @@ const Skillchart = ({ activeTab, data }: Skillchartprops) => {
     <div className="w-full h-88 flex justify-center items-end gap-6">
       {selectDataByActiveTab(activeTab).map(
         ({ name, value }: SkillBarprops) => (
-          <SkillBar key={name} name={name} value={value} />
+          <SkillBar
+            key={name}
+            name={name}
+            value={value}
+            color={activeTab.color}
+          />
         ),
       )}
     </div>
