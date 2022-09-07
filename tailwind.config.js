@@ -10,7 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         timeline: 'url(public/images/timeline.png)',
-        divider: 'url(public/images/dividerbg/bg1.jpg)',
+        divider: 'url(public/images/bg1.jpg)',
         hero: 'url(public/images/hero.jpg)',
       },
       width: {
