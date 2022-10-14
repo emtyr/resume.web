@@ -12,7 +12,7 @@ const SkillBar = ({ name, color, value }: SkillBarprops) => (
     />
     <div
       style={{ writingMode: 'vertical-rl' }}
-      className="relative w-full h-full flex rotate-180 items-center -my-3">
+      className="relative w-full h-full flex rotate-180 items-center -my-3 font-bold">
       {name} {value}%
     </div>
   </div>

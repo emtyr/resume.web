@@ -9,7 +9,9 @@ const Skills = () => {
   });
   console.log(activeTab);
   return (
-    <section className="w-full h-full flex flex-col pt-4 justify-end bg-[#1C202B]">
+    <section
+      id="skills"
+      className="w-full h-full flex flex-col pt-4 justify-end bg-[#1C202B]">
       <div className="flex flex-col w-full h-full justify-center items-center">
         <div className="flex space-x-12">
           <Tabutton

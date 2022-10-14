@@ -31,3 +31,6 @@ h5 {
 h6 {
   font-size: 4rem !important;
 }
+body {
+  scroll-margin-top: 10rem;
+}

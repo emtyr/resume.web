@@ -2,7 +2,9 @@ import Xpcard from './Xpcard';
 import { xpcards } from '../../data/text';
 import { XPCardProps } from './props';
 const Experience = () => (
-  <section className="h-auto w-full bg-experience-section py-16">
+  <section
+    id="experience"
+    className="h-auto w-full bg-experience-section py-16">
     <div className="bg-timeline bg-top bg-repeat-y">
       {xpcards.map(
         ({ company, position, text, startDate, endDate }: XPCardProps, i) => (

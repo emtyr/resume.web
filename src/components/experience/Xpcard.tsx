@@ -22,9 +22,9 @@ const xpcard = ({
         }`}
       />
       <div>
-        <div>{company}</div>
-        <div>{position}</div>
-        {text}
+        <div className="text-3xl">{company}</div>
+        <div className="text-xl py-4">{position}</div>
+        <div dangerouslySetInnerHTML={{ __html: text }} />
       </div>
     </div>
     <Bula startDate={startDate} endDate={endDate} />
